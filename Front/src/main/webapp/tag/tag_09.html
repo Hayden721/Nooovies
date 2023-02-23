@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+/* table th, td 태그에 스타일을 지정  */
+table, th, td {
+	border: 1px solid #ccc;
+	/* 테이블 테두리가 겹치는 부분에 대한 표현법 설정
+		collapse 합쳐서 한줄로 보여준다.
+	 */
+	border-collapse: collapse;
+}
+</style>
+
+</head>
+<body>
+	<h1>테이블 태</h1>
+	<h3>caption, thead, tbody, tfoot</h3>
+	<hr>
+	<table>
+	<thead><!-- 테이블의 머릿글, 최상단 행으로고정한다. -->
+		<tr>
+		<th>이름</th>
+		<th>주소</th>
+		<th>전화번호</th>
+		</tr>
+	</thead>
+	
+	<tfoot><!-- 테이블의 바닥글 -->
+		<tr>
+		<th>NAME</th>
+		<th>ADDRESS</th>
+		<th>PHONE</th>
+		</tr>
+	</tfoot>
+	
+	<tbody><!-- 테이블의 본문, <thead>와 <tfoot> 사이에 위치한다. -->
+		
+		<tr>
+			<td>Alice</td>
+			<td>서울시 강남구</td>
+			<td>01011111111</td>
+		</tr>
+		
+				<tr>
+			<td>bob</td>
+			<td>서울시 강남구</td>
+			<td>01011111112</td>
+		</tr>
+		
+				<tr>
+			<td>tom</td>
+			<td>서울시 강남구</td>
+			<td>01011111113</td>
+		</tr>
+	</tbody>
+	</table>
+	
+</body>
+</html>

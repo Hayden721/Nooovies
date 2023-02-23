@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- CSS embedded 방식 
+	p 태그 선택자 = 모든 p태그를 선택한다.
+-->
+<style type="text/css">
+	/* hi 아이디 선택자 = id 속성값이 "hi"인 태그를 선택한다.*/
+	#hi {
+		/* 글자색 : 파랑*/
+		color: blue;
+	}
+	
+	/* hello 클래스 선택자 - class 속성값이 "hello"인 모든 태그 선택*/
+	.hello {
+		color: tomato;
+	}
+	
+	p {
+		/* font-size : 글자의 크기 */
+		font-size: 30px;
+	}
+	
+	span {
+		/* font-style 스타일 속성 : 글자의 스타일을 지정한다.
+			-> italic: 기울임
+		 */
+		font-style: italic;
+	}
+</style> 
+</head>
+<body>
+	<!-- inline 방 -->
+	<h1 style="color: red">d</h1>
+	<hr>
+	<p id="hi">HI</p>
+	<p class="hello">HIHI</p>
+	<span>SPAN태그</span>
+	<span class="hello">안녕하세요</span>
+	
+</body>
+</html>

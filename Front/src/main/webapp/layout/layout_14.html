@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.img-box {
+		width: 400px;
+		height: 300px;
+		text-align: center;
+		border: 1px solid #ccc;
+		/* box-shadow - 요소의 그림자를 생성한다.
+		box-shadow - x축이동 y축 이동 흐려짐(blur) 펼쳐짐(spread) 색상; */
+		box-shadow: 5px 5px 10px 0 #999;
+		
+		-webkit-box-shadow: 5px 5px 10px 0 #999;
+		-moz-box-shadow: 5px 5px 10px 0 #999;
+		/* transform 요소의 모양을 변형한다. */
+		
+		transform: rotate(20deg); /* 적용한 각도만큼 회원 변형한다.(deg 단위) */
+		
+	}
+	
+	.img-box img {
+		width: 380px;
+		
+	}
+</style>
+</head>
+<body>
+
+	<header>
+		<h1>HTML5 추가된 CSS 속성</h1>
+		<h3>벤더 프리픽스. Vendor Prefix </h3>
+	</header>
+	<hr>
+	
+	<div>
+		<div>
+			<p>본문 내용</p>
+			<p>내용물을 적는다.</p>
+			<p>컨텐츠</p>
+		</div>
+		
+		<div>
+			<img class=img-box alt="미니언" src="../resources/image/mm.jpeg"><br>
+			미니언즈 이미지!
+		</div>
+	</div>
+	<hr>
+	
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis eros magna, non elementum nisl maximus non. Donec rhoncus augue in augue eleifend iaculis. Sed quis diam vitae quam auctor fringilla. Morbi ultrices sapien non mi efficitur luctus. Morbi ut neque a leo dictum semper eget quis lacus. Duis vel congue nisi, eget mollis est. Vivamus imperdiet purus eros, eu aliquam mauris feugiat nec.</p>
+	<p>Sed vel quam ut arcu vehicula iaculis et blandit dolor. Suspendisse sed facilisis arcu. In ex ligula, commodo vitae sollicitudin eget, ullamcorper sed est. Duis ut purus ut purus rutrum luctus. Vestibulum justo sapien, aliquet et tristique in, pharetra sit amet nisl. Fusce libero quam, lacinia at posuere non, auctor a dui. Etiam at ligula sagittis, eleifend nibh maximus, suscipit eros.</p>
+	<p>finibus pharetra. Pellentesque commodo massa at orci varius, in varius ante condimentum. Praesent ullamcorper odio vel odio hendrerit, ut cursus tellus pharetra. Mauris et rutrum massa. Ut ac egestas elit. Quisque dictum et ipsum eu semper. Donec scelerisque rutrum neque, eu mattis justo bibendum eu. Ut dapibus ex nec nunc hendrerit, ac lobortis turpis feugiat.</p>
+</body>
+</html>

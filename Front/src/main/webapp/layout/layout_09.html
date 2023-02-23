@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+		border: 1px solid #ccc;
+		
+		/* 내부 정렬 */
+		text-align: center;
+		
+		/* margin: 20px; */
+		/* 외부 정렬 */
+		margin: 0 auto;
+		
+		padding: 5px;
+		
+		width: 300px;
+		height: 250px;
+		
+		
+	}
+	/* display: table-row;
+	 	width, margin, padding, border는 화면에 적용되지 않는다.
+	 */
+	tr {
+		width: 10px;
+		margin: 15px;
+		padding: 15px;
+		border: 1px solid black;
+		/* height는 적용할 수 있다. 
+			직접 크기를 지정하지 않으면 자식 요소의 높이만큼 같이 커진다.
+		*/
+		height: 100px;
+	}
+	th, td {
+		/* 둘 다 적용된다. */
+		width: 100px;
+		height: 110px;
+		/* width는 <table>에 적용된 설정값을 우선 적용시킨다.
+		height는 콘텐츠의 최종 높이(총합)를 우선 적용시킨다. */
+		
+		/* padding 적용 가능하다. */
+		padding: 5px;
+		
+		margin: 10px;
+
+	}
+	th {
+		border: 1px solid tomato;
+	}
+	td {
+		border: 1px solid green;
+	}
+</style>
+</head>
+<body>
+
+<!-- table이
+
+border는 상속이 되지 않는다. -->
+<table>
+	<tr>
+		<th>하나</th>
+		<th>둘</th>
+		<th>셋</th>
+	</tr>
+	
+	<tr>
+		<td>A</td>
+		<td>B</td>
+		<td>C</td>
+	</tr>
+	
+	<tr>
+		<td>apple</td>
+		<td>banana</td>
+		<td>cherry</td>
+	</tr>
+	
+</table>
+</body>
+</html>

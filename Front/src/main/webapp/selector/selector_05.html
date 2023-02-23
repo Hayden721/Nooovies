@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	/* 인접 형제 선택자 
+		h1태그의 곧바로 다음에 인접한 p태그 요소 한 개 선택 
+	*/
+	
+	h1 + p {
+		background: yellow;
+	}
+	/* 인접 형제 선택자 
+		h1 태그의 곧바로 다음에 인접한 h1 태그 요소 선택
+	 */
+	h1 + h1 {
+		background: green;
+		
+	}
+	/* 일반 형제 선택자 
+		h1 태그를 뒤따르는 모든 p태그 형제 요소 선택 
+	*/
+	h1 ~ p {
+		border: 1px solid red;
+	}
+	
+	#content h1 ~ p {
+		/* 글자에 밑 줄 넣기 */
+		text-decoration: underline;
+	}
+	/* h1태그의 인접 형재 .choo */
+	h1 + .choco {
+		color: chocolate; 
+	}
+	
+	h1 ~ .choco {
+		background: chocolate;
+	}
+	
+	.choco + .choco {
+		color: blue;
+	}
+	p + p {
+		color: red;
+		font-style: italic;
+	}
+</style>
+
+</head>
+<body>
+<div>
+	<h1> 복합연산자</h1>
+	<h3>일반형제, 인접형제</h3>
+	
+	<div id="content">
+		<p>첫번째</p>
+		<h1>두번째</h1>
+		<p>세번쨰</p>
+		<p class="choco">네번쨰</p>
+		<p class="choco">다섯번째</p>
+		<h1>여섯번째</h1>
+		<p>일곱번쨰</p>
+		<p>여덟번째</p>
+	</div>
+</div>
+</body>
+</html>

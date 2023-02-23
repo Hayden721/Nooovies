@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+/* table th, td 태그에 스타일을 지정  */
+table, th, td {
+	border: 1px solid #ccc;
+	/* 테이블 테두리가 겹치는 부분에 대한 표현법 설정
+		collapse 합쳐서 한줄로 보여준다.
+	 */
+	border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<h1>테이블 태그</h1>
+<h3>colspan 속성, rowspan속성</h3>
+	<table>
+	<tr>
+		<td>1x1 셀</td>
+		<td>1x2 셀</td>
+		<td>1x3 셀</td>
+		<!--행확장  -->
+		
+		<td rowspan="1">1x3 셀</td>
+	</tr>
+	
+	<tr>
+		<td>2x1 셀</td>
+		<td>2x2 셀</td>
+		<td>2x3 셀</td><!-- 윗 행의 확장 때문에 오른쪽으로 밀려난다. -->
+	</tr>
+	
+	
+	<tr>
+		<td colspan="2">3x1 셀(글자들 많이 )</td>
+	</tr>
+	</table>
+
+</body>
+</html>

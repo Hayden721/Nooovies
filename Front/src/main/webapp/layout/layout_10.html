@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.box {
+		width: 150px;
+		height: 50px;
+		color: #999;
+		border: 1px solid red;
+	}
+	
+	/* 요소의 위치속성 지정 */
+	.absolute {
+		position: absolute;
+	}
+/* 	.a1 {
+		top: 1px; 
+		right: 2px;
+		bottom: 3px;
+		right: 4px;
+	} */
+	#a1 {
+		top: 100px;
+		left: 50px;
+		
+	}
+	#a2 {
+	bottom: 100px;
+	right: 100px;
+	
+	}
+	
+	#a4 {
+	top:20px;
+	left: 20px;
+	}
+	
+	#a3 {
+		bottom: 200px;
+		right: 300px;
+	}
+	/*  */
+	.relative {
+		position: relative;
+	}
+	
+	/*  */
+	#r1 {
+	top: 100px;
+	left: 200px;
+	}
+	
+	.fixed {
+		position: fixed;
+		
+		bottom: 0;
+		right: 0;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+	
+	
+	<div id="a1" class="box absolute">절대 위치 박스1</div>
+	<div id="a2" class="box absolute">절대 위치 박스2</div>
+	
+	<div id="a3" class="box absolute"> 
+		<div id="a4" class="box absolute">절대 위치 박스4</div>
+	</div>
+	
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	안녕하세요 <br>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam venenatis eros magna, non elementum nisl maximus non. Donec rhoncus augue in augue eleifend iaculis. Sed quis diam vitae quam auctor fringilla. Morbi ultrices sapien non mi efficitur luctus. Morbi ut neque a leo dictum semper eget quis lacus. Duis vel congue nisi, eget mollis est.</p> 
+	<p>Vivamus imperdiet purus eros, eu aliquam mauris feugiat nec.</p>
+	
+	<div id="r1" class="box relative"> 상대 위치 박스 </div>
+	
+	<p>Sed vel quam ut arcu vehicula iaculis et blandit dolor. Suspendisse sed facilisis arcu. In ex ligula, commodo vitae sollicitudin eget, ullamcorper sed est. Duis ut purus ut purus rutrum luctus. Vestibulum justo sapien, aliquet et tristique in, pharetra sit amet nisl. Fusce libero quam, lacinia at posuere non, auctor a dui. Etiam at ligula sagittis, eleifend nibh maximus, suscipit eros. Sed posuere augue at finibus pharetra. Pellentesque commodo massa at orci varius, in varius ante condimentum. Praesent ullamcorper odio vel odio hendrerit, ut cursus tellus pharetra. Mauris et rutrum massa. Ut ac egestas elit. Quisque dictum et ipsum eu semper. Donec scelerisque rutrum neque, eu mattis justo bibendum eu.</p> 
+	<p>Ut dapibus ex nec nunc hendrerit, ac lobortis turpis feugiat.</p>
+	<!-- absolute박스의 기준점으로  -->
+	<div class="relative">
+		<div class="box absolute">
+			부모 태그 안에 생성된 절대위치 박스
+		</div>
+	 </div>
+	 
+	 <div class="box fixed"> 고정 위치 박스 </div>
+</body>
+</html>
